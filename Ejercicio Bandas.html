@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bandsmodule">
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.28/css/bulma.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script  src="ejerciciobandas.js"></script>
+</head>
+<body>
+
+<div class="columns" ng-controller="Bandscontroller" >
+
+<!-- <p>Band: {{bands[0].name}}</p>
+<p>Decade: {{bands[0].decade}}</p>-->
+
+<div class="column" ng-repeat="band in bands " style="flex-wrap:wrap">
+
+<band-directive> </band-directive> 
+</div>
+</div>
+</div>
+</body>
+
+
+
+</html>
